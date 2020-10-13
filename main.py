@@ -1,10 +1,11 @@
 import random
 
-num = random.randint(1,100)
-print("Adivina el numero del 1 al 100 en 10 intentos")
+num = random.randint(1,15)
 
 elegido = 0
-intentos = 10
+intentos = 5
+
+print(f"Adivina el numero del 1 al 15 en {intentos} intentos")
 
 while elegido != num and intentos > 0:
     elegido = int(input())
