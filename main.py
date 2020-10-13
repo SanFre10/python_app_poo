@@ -1,10 +1,19 @@
 import random
 
+intentos = 0
+
+diff= int(input("Seleccione la Dificultad: 1-Facil, 2-Medio, 3-Dificil."))
+if diff == 1:
+    intentos = 15
+elif diff == 2:
+    intentos = 10
+else:
+    intentos = 5
+
 num = random.randint(1,100)
-print("Adivina el numero del 1 al 100 en 1 intento (suerte)")
+print("Adivina el numero del 1 al 100 en {} intentos".format(intentos))
 
 elegido = 0
-intentos = 1
 
 while elegido != num and intentos > 0:
     elegido = int(input())
