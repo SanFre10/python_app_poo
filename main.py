@@ -11,7 +11,7 @@ else:
     intentos = 5
 
 num = random.randint(1,100)
-print("Adivina el numero del 1 al 100 en 10 intentos")
+print("Adivina el numero del 1 al 100 en {} intentos".format(intentos))
 
 elegido = 0
 
